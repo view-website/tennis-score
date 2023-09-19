@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Score Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/?size=1x&id=PdMdDcfGyA1O&format=png">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Score Tracker</h1>
+    <div id="board">
+    <div class="scores" id="plyr1">
+        <i class="fa fa-play" id="plyr1serve"></i>
+        <input type="text" placeholder="Player 1 Name" id="name_plyr1">
+        <button id="set1plyr1"> 0</button>
+        <button id="set2plyr1"> 0</button>
+        <button id="set3plyr1"> 0</button>
+        <button id="set4plyr1"> 0</button>
+        <button id="set5plyr1"> 0</button>
+        <br>
+    </div>
+    <br>
+    <!--<div class="scene">
+    <div class="card">
+    <button class="points card__face--front" id="point1">15</button>
+    <button class="points card__face--back">30</button>
+    </div>
+</div>
+
+<div class="scene">
+    <div class="card">
+    <button class="points card__face--front" id="point2">30</button>
+    <button class="points card__face--back">40</button>
+    </div>
+    </div>-->
+    <div class="scene scene--card">
+        <div class="card" id="plyr1card">
+          <div class="card__face card__face--front" id="plyr1front" onclick="player1()">0</div>
+          <div class="card__face card__face--back" id="plyr1back" onclick="player1()"></div>
+        </div>
+      </div>
+      <div class="scene scene--card">
+        <div class="card" id="plyr2card">
+          <div class="card__face card__face--front"id="plyr2front" onclick="player2()">0</div>
+          <div class="card__face card__face--back" id="plyr2back" onclick="player2()"></div>
+        </div>
+      </div>
+    <br><br><br>
+
+    <div class="scores" id="plyr2">
+        <i class="fa fa-play" id="plyr2serve" style="opacity: 0;"></i>
+        <input type="text" placeholder="Player 2 Name" id="name_plyr2">
+        <button id="set1plyr2"> 0</button>
+        <button id="set2plyr2" > 0</button>
+        <button id="set3plyr2"> 0</button>
+        <button id="set4plyr2"> 0</button>
+        <button id="set5plyr2"> 0</button>
+    
+</div>
+<script>
+    var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+</script>
+</body>
+</html>
