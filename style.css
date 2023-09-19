@@ -55,43 +55,6 @@ button{
   width: 40px;
   height: 40px;
 }
-/*.scene {
-    display: inline-block;
-    perspective: 600px;
-  }
-  .card{
-    position: relative;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transform-origin: center right;
-    transition: transform 1s;
-  }
-  #point1{
-    margin-left: 50px;
-  }
-
-.points{
-
-  position: absolute;
-    border-image: linear-gradient(#f6b73c,rgb(255, 250, 176),  gold) 30;
-    border-width: 4px;
-    border-style: dotted;
-    margin-left: -160px;
-    margin-right: 5px;
-    backface-visibility: hidden;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-size: 500%;
-}
-.card.is-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
-  }
-  .card__face--front {
-    background: none;
-  }
-  .card__face--back {
-    transform: rotateY(180deg);
-  }
-  */
   .scene {
     display: inline-block;
     width: 100px;
